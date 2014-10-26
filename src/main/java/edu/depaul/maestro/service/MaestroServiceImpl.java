@@ -15,7 +15,7 @@ public class MaestroServiceImpl implements MaestroService {
     private OperationsService OperationsService;
     
     public void setOperationsService(OperationsService operationsService){
-        this.OperationsService = operatiosnService;
+        this.OperationsService = operationsService;
     }
 
 	/* (non-Javadoc)
