@@ -1,9 +1,9 @@
 /**
  * 
  */
-package edu.depaul.service;
+package edu.depaul.maestro.service;
 
-import edu.depaul.model.Container;
+import edu.depaul.operations.model.Container;
 
 /**
  * Concrete implementation of the OperationsService

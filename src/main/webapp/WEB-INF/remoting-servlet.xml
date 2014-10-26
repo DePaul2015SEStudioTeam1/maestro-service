@@ -3,6 +3,6 @@
 <beans>
     <bean name="/MaestroService" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
         <property name="service" value="maestroService"/>
-        <property name="serviceInterface" value="edu.depaul.service.MaestroService"/>
+        <property name="serviceInterface" value="edu.depaul.maestro.service.MaestroService"/>
     </bean>
 </beans>
