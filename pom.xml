@@ -10,6 +10,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>3.0.7.RELEASE</spring.version>
         <operations-api.version>0.0.1-SNAPSHOT</operations-api.version>
+        <maestro-api.version>0.0.1-SNAPSHOT</maestro-api.version>
     </properties>
     
     <distributionManagement>
@@ -84,6 +85,11 @@
             <groupId>edu.depaul</groupId>
             <artifactId>operations-api</artifactId>
             <version>${operations-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.depaul</groupId>
+            <artifactId>maestro-api</artifactId>
+            <version>${maestro-api.version}</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
