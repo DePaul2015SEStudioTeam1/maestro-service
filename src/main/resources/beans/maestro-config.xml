@@ -14,6 +14,7 @@
 		                http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
     <import resource="classpath:/beans/operations-client.xml"/>
+    <import resource="classpath:/beans/maestro-client.xml"/>
     <import resource="classpath:/beans/maestro-service.xml"/>
     
 
