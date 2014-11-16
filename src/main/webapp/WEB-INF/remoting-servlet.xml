@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE web-app PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 <beans>
     <bean name="/MaestroService" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
-        <property name="service" value="maestroService"/>
+        <property name="service" ref="maestroService"/>
         <property name="serviceInterface" value="edu.depaul.maestro.service.MaestroService"/>
     </bean>
 </beans>
