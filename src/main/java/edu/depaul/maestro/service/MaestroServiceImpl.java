@@ -3,12 +3,10 @@
  */
 package edu.depaul.maestro.service;
 
+import org.apache.log4j.Logger;
+
 import edu.depaul.operations.model.Container;
 import edu.depaul.operations.service.OperationsService;
-<<<<<<< HEAD
-import org.apache.log4j.Logger;
-=======
->>>>>>> FETCH_HEAD
 
 /**
  * Concrete implementation of the OperationsService
@@ -18,10 +16,7 @@ import org.apache.log4j.Logger;
 public class MaestroServiceImpl implements MaestroService<Container> {
     
     private OperationsService<Container> operationsService;
-<<<<<<< HEAD
     final Logger logger = Logger.getLogger(MaestroServiceImpl.class);
-=======
->>>>>>> FETCH_HEAD
     
     public void setOperationsService(OperationsService<Container> operationsService){
         this.operationsService = operationsService;
@@ -31,8 +26,7 @@ public class MaestroServiceImpl implements MaestroService<Container> {
 	 * @see edu.depaul.service.OperationsService#store(edu.depaul.model.Container)
 	 */
 	public void store(Container container) {
-<<<<<<< HEAD
-        
+		
 		if(logger.isDebugEnabled()){
 			logger.debug("Container received by Maestro. Container ID: " + container.getId() +
 					" Sent by Agent ID: " + container.getAgentId());
@@ -41,10 +35,6 @@ public class MaestroServiceImpl implements MaestroService<Container> {
 		logger.error("There was a problem with the container received.", new Exception("Testing"));
 		
 		operationsService.store(container);        
-        
-=======
-        operationsService.store(container);
->>>>>>> FETCH_HEAD
 	}
 
 }
