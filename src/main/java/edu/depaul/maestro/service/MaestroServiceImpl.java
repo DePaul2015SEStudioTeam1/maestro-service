@@ -26,15 +26,14 @@ public class MaestroServiceImpl implements MaestroService<Container> {
 	 * @see edu.depaul.service.OperationsService#store(edu.depaul.model.Container)
 	 */
 	public void store(Container container) {
+		logger.debug("Container received. [Container: " + container.getId() + " Agent: " + container.getAgentId() + "]");
 		
-		if(logger.isDebugEnabled()){
-			logger.debug("Container received by Maestro. Container ID: " + container.getId() +
-					" Sent by Agent ID: " + container.getAgentId());
+		try {
+			operationsService.store(container);
 		}
-		
-		logger.error("There was a problem with the container received.", new Exception("Testing"));
-		
-		operationsService.store(container);        
+		catch(Exception e) {
+			logger.error(e.getMessage(), e);
+		}
 	}
 
 }
